@@ -1,35 +1,45 @@
 body{
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     background-color: aquamarine;
 }
 
+.holder{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .title{
-    padding: 1px;
+    padding-top: 1rem;
+    font-size: 2.25rem;
    color: blue;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    text-align: center;
 }
 
 .buttons{
-    margin: 3rem;
-    padding: 0;
-    height: 5rem;
+    margin: 0 4rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    font-size: .700rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 .btn{
-   width: 100px;
+   width: 130px;
    font-family: cursive;
    font-weight: 540;
    color: #000;
    background-color: white;
    border: 3px solid black;
    border-radius: 7px;
-   margin: 1rem;
    cursor: pointer;
 }
 .btn:hover{
@@ -42,15 +52,23 @@ body{
 }
 
 .container{
-    width: 32rem;
-    height: 32rem;
-    margin: 3rem auto;
+    width: 24rem;
+    height: 24rem;
+    margin: 0% auto;
     background-color: white;
     border: 3px solid black;
 }
 
 .cell{
     margin: 0;
+}
+
+
+.footer{
+    margin-top: .700rem;
+    margin-bottom: .400rem;
+  font-size: .8rem;
+  line-height: .5rem;
 }
 
 p{
@@ -69,6 +87,12 @@ a{
 
 
 @media only screen and (max-width: 600px){
+
+    .title{
+        font-size: 1.65rem;
+        padding-top: 1.5rem;
+    }
+
     .container{
         width: 20rem;
         height: 20rem;
@@ -76,13 +100,26 @@ a{
     }
 
     .buttons{
-        height: 4.5rem;
+        height: 4.20rem;
     }
     .btn{
-        font-size: .650rem;
+        font-size: .600rem;
         border-radius: 7px;
         margin: 1rem;
         cursor: pointer;
      }
 
+     .footer{
+        font-size: .80rem;
+        line-height: .5rem;
+      }
+
+}
+
+@media only screen and (min-width: 601px){
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
 }

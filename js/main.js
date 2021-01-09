@@ -29,6 +29,10 @@ function createdivs() {
         item.addEventListener('mouseover', colorgrid)
     });
 
+    document.querySelectorAll('.cell').forEach(item => {
+        item.addEventListener('touchstart', colorgrid)
+    });
+
 }
 
 function changeColor() {
